@@ -4,58 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golden</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <!-- в логотипі посилання на поточну сторінку -->
-        <a href="./index.html">Golden</a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Home</a>
+        <a href="./index.html" class="logo">Golden</a>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Home</a>
                 </li>
-                <li>
-                    <a href="#">Services</a>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Services</a>
                 </li>
-                <li>
-                    <a href="#">Portfolio</a>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Portfolio</a>
                 </li>
-                <li>
-                    <a href="#">About</a>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">About</a>
                 </li>
-                <li>
-                    <a href="#">Contact</a>
+                <li class="nav-list-item">
+                    <a href="#" class="nav-list-link">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main">
         
-        <h1>Services</h1>
-        <ul>
-            <li>
-                <h4>E-Commerce</h4>
-                <p>Proin iaculis purus consequat sem cure <br>digni ssim. Donec porttitora entum suscipit <br> aenean rhoncus posuere odio in tincidunt.</p>
+        <h1 class="main-title">Services</h1>
+        <ul class="main-list">
+            <li class="main-list-item">
+                <h4 class="main-list-title">E-Commerce</h4>
+                <p class="main-list-text">Proin iaculis purus consequat sem cure <br>digni ssim. Donec porttitora entum suscipit <br> aenean rhoncus posuere odio in tincidunt.</p>
             </li>
-            <li>
-                <h4>Responsive Web</h4>
-                <p>Proin iaculis purus consequat sem cure <br>digni ssim. Donec porttitora entum suscipit <br> aenean rhoncus posuere odio in tincidunt.</p>
+            <li class="main-list-item">
+                <h4 class="main-list-title">Responsive Web</h4>
+                <p class="main-list-text">Proin iaculis purus consequat sem cure <br>digni ssim. Donec porttitora entum suscipit <br> aenean rhoncus posuere odio in tincidunt.</p>
             </li>
-            <li>
-                <h4>Web Security</h4>
-                <p>Proin iaculis purus consequat sem cure <br>digni ssim. Donec porttitora entum suscipit <br> aenean rhoncus posuere odio in tincidunt.</p>
+            <li class="main-list-item">
+                <h4 class="main-list-title">Web Security</h4>
+                <p class="main-list-text">Proin iaculis purus consequat sem cure <br>digni ssim. Donec porttitora entum suscipit <br> aenean rhoncus posuere odio in tincidunt.</p>
             </li>
         </ul>
     </main>
-    <footer>
+    <footer class="footer">
         <!-- Заголовок h2 переделаный в стилях по размеру под h1. Выбираем размер по важности. -->
-        <h2>Contact us</h2>
-        <form>
-            <input type="text" name="username" placeholder="your Name *" required>
-            <input type="email" name="email" placeholder="your e-mail *" required>
-            <input type="text" name="subject" placeholder="subject">
-            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Your message *"></textarea>
-            <button type="submit">Send Message</button>
+        <h2 class="footer-title">Contact us</h2>
+        <form class="form">
+            <input type="text" name="username" placeholder="your Name *" required class="form-username">
+            <input type="email" name="email" placeholder="your e-mail *" required class="form-mail">
+            <input type="text" name="subject" placeholder="subject" class="form-subject">
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Your message *" class="form-comment"></textarea>
+            <button type="submit" class="button-submit">Send Message</button>
         </form>
     </footer>
 </body>
