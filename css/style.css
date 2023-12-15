@@ -17,20 +17,41 @@ ul{
 }
 a{
     text-decoration:none;
+    cursor: pointer;
 }
-
+ul, p, a, h4, h2, input, button{
+    padding:0;
+    margin:0;
+}
+.container{
+    /* Самая большая ширина контейнера + паддинг изнутри 30 px (по 15 пикс с каждой стороны))*/
+    width: 972px;
+    margin:0 auto;
+    padding:0 15px;
+    outline: 5px solid green;
+}
+.header .container{
+    margin: 44px auto 92px;
+}
 .logo{
     font-family:'Bilbo Swash Caps', serif;
     color:var(--main-accent);
     font-size:36px;
     line-height:1.14;
     letter-spacing:1.3px;
+    display: inline-block;
+    padding: 0 33px;
 }
 .nav-list-link{
     color:var(--main-accent);
     font-size: 14px;
     text-transform: uppercase;
-    line-height:1.14;
+    line-height:1.14; 
+    display: inline-block;   
+    padding: 15px 16px; 
+}
+.main .container{
+    padding-bottom: 119px;
 }
 .main-title{
     color:var(--project-black);
@@ -39,6 +60,10 @@ a{
     text-transform: uppercase;
     line-height:1.87;
     text-align:center;
+    margin:0 auto 87px;
+}
+.main-list-item{
+    display:inline-block;
 }
 .main-list-title{
     color:var(--project-black);
@@ -56,11 +81,16 @@ a{
 .footer{
     background-color:var(--project-black);
 }
+.footer .container{
+    padding-top: 92px;
+    padding-bottom: 115px;
+}
 .footer-title{
     color:var(--project-white);
     text-align:center;
     font-size: 40px;
     text-transform: uppercase;
+    margin: 0 auto 114px;
 }
 .form-input{
     width:455px;
@@ -88,4 +118,9 @@ a{
     font-weight: 700;
     text-transform: uppercase;
     border:none;
+    border-radius: 3px;
+    padding:18px 33px;
+    display:block;
+    /* align-items: center; */
+    margin:29px auto 0;
 }
