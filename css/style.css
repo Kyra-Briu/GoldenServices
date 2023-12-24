@@ -116,6 +116,8 @@ ul, p, a, h4, h2, input, button{
     /* flex-direction:column; */
     gap: 28px; 
     height:215px;
+    flex-wrap:wrap;
+    flex-direction:column;
 }
 .form-input{
     width:455px;
@@ -146,6 +148,5 @@ ul, p, a, h4, h2, input, button{
     border-radius: 3px;
     padding:18px 33px;
     display:block;
-    /* align-items: center; */
     margin:29px auto 0;
 }
