@@ -28,10 +28,15 @@ ul, p, a, h4, h2, input, button{
     width: 972px;
     margin:0 auto;
     padding:0 15px;
-    outline: 5px solid green;
+    /* outline: 5px solid green; */
 }
 .header .container{
-    margin: 44px auto 92px;
+    padding:35px 15px 86px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    gap:285px;
 }
 .logo{
     font-family:'Bilbo Swash Caps', serif;
@@ -42,16 +47,23 @@ ul, p, a, h4, h2, input, button{
     display: inline-block;
     padding: 0 33px;
 }
+.nav-list{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:10px;
+    align-items:center;
+}
 .nav-list-link{
     color:var(--main-accent);
     font-size: 14px;
     text-transform: uppercase;
     line-height:1.14; 
     display: inline-block;   
-    padding: 15px 16px; 
+    /* padding: 15px 16px;  */
 }
 .main .container{
-    padding-bottom: 119px;
+    padding: 0 15px 119px;
 }
 .main-title{
     color:var(--project-black);
@@ -60,10 +72,13 @@ ul, p, a, h4, h2, input, button{
     text-transform: uppercase;
     line-height:1.87;
     text-align:center;
-    margin:0 auto 87px;
+    margin-top:0;
+    margin-bottom:87px;
 }
-.main-list-item{
-    display:inline-block;
+.main-list{
+    display:flex;
+    flex-direction:row;
+    gap:56px;
 }
 .main-list-title{
     color:var(--project-black);
@@ -91,6 +106,16 @@ ul, p, a, h4, h2, input, button{
     font-size: 40px;
     text-transform: uppercase;
     margin: 0 auto 114px;
+}
+/* .footer-form{
+    display:flex;
+    column-gap:28px;
+} */
+.footer-form-box{
+    display:flex;
+    /* flex-direction:column; */
+    gap: 28px; 
+    height:215px;
 }
 .form-input{
     width:455px;
