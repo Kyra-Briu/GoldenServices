@@ -60,7 +60,18 @@ ul, p, a, h4, h2, input, button{
     text-transform: uppercase;
     line-height:1.14; 
     display: inline-block;   
-    /* padding: 15px 16px;  */
+    padding: 15px 16px; 
+    position:relative;
+}
+.nav-list-link:hover::after{
+    content:'';
+    display:block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-accent);
+    position: absolute;
+    top: 30px;
+    left: 0;
 }
 .main .container{
     padding: 0 15px 119px;
@@ -78,7 +89,28 @@ ul, p, a, h4, h2, input, button{
 .main-list{
     display:flex;
     flex-direction:row;
-    gap:56px;
+    gap:26px;
+    justify-content:center;
+}
+.main-list-item::before{
+    content:'';
+    display:block;
+    border:3px solid var(--main-accent);
+    width: 70px;
+    height: 70px;
+    background-position:center;
+    background-repeat:no-repeat;
+    border-radius:50px;
+    margin:0 auto;
+}
+.main-list-item:first-child::before{
+    background-image:url('../IMAGES/Combinedshape134.svg');
+}
+.main-list-item:nth-child(2)::before{
+    background-image:url('../IMAGES/Combinedshape132.svg');
+}
+.main-list-item:nth-child(3)::before{
+    background-image:url('../IMAGES/Combinedshape130.svg');
 }
 .main-list-title{
     color:var(--project-black);
@@ -92,6 +124,7 @@ ul, p, a, h4, h2, input, button{
     font-size: 14px;
     font-family: 'Roboto Slab', serif;
     text-align:center;
+
 }
 .footer{
     background-color:var(--project-black);
